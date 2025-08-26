@@ -306,6 +306,12 @@ li.interaction {
   color: #fff; /* white text */
 }
 
+/* Figma badge (Neo pat project) */
+.award-project .badge {
+  background: #03794b; /* black */
+  color: #fff; /* white text */
+}
+
 /**
    * Address `overflow` set to `hidden` in IE 8/9/10/11.
    */
@@ -1022,6 +1028,7 @@ video.overlay {
 }
 
 .btn-click {
+  cursor: pointer;
   border: 0;
   color: var(--primary-dark);
   background: transparent;
