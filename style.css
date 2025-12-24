@@ -5655,3 +5655,78 @@ main.touch .case-intro-image .btn-wrap {
 .block-button .row .flex-col:last-child {
   margin-right: 0;
 }
+
+.home-intro {
+  padding: 120px 0;
+}
+
+.container.full {
+  width: 100%;
+  padding: 0 80px; /* edge spacing like screenshot */
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Left small label */
+.intro-label span {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  opacity: 0.8;
+}
+
+/* Main headline */
+.intro-content h1 {
+  font-size: 36px;
+  font-family: sans-serif;
+  line-height: 1.15;
+  font-weight: 500;
+  color: #111;
+  max-width: none;
+}
+
+.intro-content h1 .muted {
+  display: block;
+  font-family: sans-serif;
+  margin-top: 12px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+
+/* CTA button */
+.btn-minimal {
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-minimal:hover {
+  background: #1fda0e;
+}
+
+.btn-minimal-sec {
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+  color: #111;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-minimal-sec:hover {
+  background: #e00f71;
+  color: #fff;
+}
