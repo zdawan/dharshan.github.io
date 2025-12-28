@@ -1054,7 +1054,14 @@ video.overlay {
 }
 
 .btn-fill {
-  background: var(--color-blue);
+  background: linear-gradient(
+    135deg,
+    #8c5a5f 0%,
+    #b76e79 25%,
+    #e6b7a6 45%,
+    #b76e79 65%,
+    #8c5a5f 100%
+  );
   position: absolute;
   width: 150%;
   height: 200%;
@@ -1262,17 +1269,31 @@ video.overlay {
 }
 
 .btn-round .btn-fill {
-  background: var(--color-blue);
+  background: linear-gradient(
+    135deg,
+    #8c5a5f 0%,
+    #b76e79 25%,
+    #e6b7a6 45%,
+    #b76e79 65%,
+    #8c5a5f 100%
+  );
 }
 
 /* --- Button Circle - Theme Dark --- */
 
 .theme-dark .btn-round .btn-click {
-  background: var(--color-blue);
+  background: #3c027e;
 }
 
 .theme-dark .btn-round .btn-fill {
-  background: var(--color-blue-dark);
+  background: linear-gradient(
+    135deg,
+    #8c5a5f 0%,
+    #b76e79 25%,
+    #e6b7a6 45%,
+    #b76e79 65%,
+    #8c5a5f 100%
+  );
 }
 
 /* --- Button Â© Left Top --- */
@@ -1387,7 +1408,7 @@ video.overlay {
 }
 
 .btn-hamburger .btn-fill {
-  background-color: var(--color-blue);
+  background-color: #d1b37c;
 }
 
 .btn-hamburger .btn-text-inner {
@@ -5729,4 +5750,36 @@ main.touch .case-intro-image .btn-wrap {
 .btn-minimal-sec:hover {
   background: #e00f71;
   color: #fff;
+}
+
+.footer-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+/* identical sizing logic to hero */
+.footer-hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: translateY(4vh); /* 👈 moves image DOWN */
+}
+
+.footer-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* EXACT same as hero */
+}
+
+/* optional dark overlay – SAME intensity as hero */
+.footer-hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.85)
+  );
 }
