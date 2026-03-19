@@ -525,7 +525,9 @@ html.has-scroll-dragging {
   width: 11px;
   height: 100%;
   transform-origin: center right;
-  transition: transform 0.3s, opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
   opacity: 0;
 }
 
@@ -1396,7 +1398,8 @@ video.overlay {
 .btn-hamburger .btn-click {
   border: 0;
   background-color: var(--color-dark);
-  transition: background-color 0.25s cubic-bezier(0.36, 0, 0.66, 0),
+  transition:
+    background-color 0.25s cubic-bezier(0.36, 0, 0.66, 0),
     box-shadow 0.25s cubic-bezier(0.36, 0, 0.66, 0);
   -webkit-box-shadow: inset 0px 0px 0px 1px var(--color-border-light);
   box-shadow: inset 0px 0px 0px 1px var(--color-border-light);
@@ -3542,7 +3545,8 @@ main.touch .main-wrap {
   height: 0;
   width: 0;
   transform: translateY(0%) rotate(0.001deg) scale(1);
-  transition: opacity 0.3s ease-in 0.4s,
+  transition:
+    opacity 0.3s ease-in 0.4s,
     transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -3554,7 +3558,9 @@ main.touch .main-wrap {
 .work-tiles ul li.tile-fade-out {
   opacity: 0;
   transform: translateY(5em) rotate(0.001deg);
-  transition: opacity 0.25s ease-out, transform 0s linear 0.3s;
+  transition:
+    opacity 0.25s ease-out,
+    transform 0s linear 0.3s;
 }
 
 .work-tiles ul li.tile-fade-in {
@@ -3696,7 +3702,8 @@ main.touch .main-wrap {
   height: 0;
   overflow: hidden;
   transform: translateY(0%) rotate(0.001deg) scale(1);
-  transition: opacity 0.3s ease-in 0.4s,
+  transition:
+    opacity 0.3s ease-in 0.4s,
     transform 1s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 0;
 }
@@ -3708,7 +3715,9 @@ main.touch .main-wrap {
 .grid-fade.grid-fade-out {
   opacity: 0;
   transform: translateY(5em) rotate(0.001deg);
-  transition: opacity 0.25s ease-out, transform 0s linear 0.3s;
+  transition:
+    opacity 0.25s ease-out,
+    transform 0s linear 0.3s;
 }
 
 .grid-fade.grid-fade-in {
@@ -3820,7 +3829,8 @@ main.touch .main-wrap {
   transform: translate(-50%, -60%);
   overflow: hidden;
   display: block;
-  transition: width 0.4s cubic-bezier(0.36, 0, 0.66, 0),
+  transition:
+    width 0.4s cubic-bezier(0.36, 0, 0.66, 0),
     height 0.4s cubic-bezier(0.36, 0, 0.66, 0);
   left: 50.5%;
   top: -10%;
@@ -3868,7 +3878,8 @@ main.touch .main-wrap {
 .mouse-pos-list-span.active {
   width: clamp(3.75em, 5.5vw, 5em);
   height: clamp(3.75em, 5.5vw, 5em);
-  transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
+  transition:
+    width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
     height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
 }
 
@@ -3876,7 +3887,8 @@ main.touch .main-wrap {
 .mouse-pos-list-span.active-big {
   width: calc(clamp(3.75em, 5.5vw, 5em) * 1.66);
   height: calc(clamp(3.75em, 5.5vw, 5em) * 1.66);
-  transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
+  transition:
+    width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
     height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
 }
 
@@ -3902,7 +3914,8 @@ main.touch .main-wrap {
 .mouse-pos-list-span.active-big {
   border-radius: 0;
   width: clamp(10em, 27.5vw, 25em);
-  transition: width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
+  transition:
+    width 0.4s cubic-bezier(0.34, 1, 0.64, 1),
     height 0.4s cubic-bezier(0.34, 1, 0.64, 1);
 }
 
@@ -5762,13 +5775,14 @@ main.touch .case-intro-image .btn-wrap {
   position: absolute;
   inset: 0;
   z-index: 0;
-  transform: translateY(4vh); /* 👈 moves image DOWN */
+  transform: translateY(0); /* 👈 moves image DOWN */
 }
 
 .footer-hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* EXACT same as hero */
+  object-fit: cover;
+  object-position: top center; /* EXACT same as hero */
 }
 
 /* optional dark overlay – SAME intensity as hero */
