@@ -666,6 +666,11 @@ html.has-scroll-dragging {
   :root {
     --section-padding: 12vh;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -2113,7 +2118,7 @@ h4 .uiux {
 main {
   box-sizing: border-box;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   height: 100%;
   background: var(--color-white);
@@ -2133,7 +2138,7 @@ main {
 
 .main-wrap {
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   will-change: transform;
   position: fixed;
 }
@@ -5691,12 +5696,13 @@ main.touch .case-intro-image .btn-wrap {
 }
 
 .home-intro {
-  padding: 120px 0;
+  padding: var(--section-padding) 0;
 }
 
 .container.full {
   width: 100%;
-  padding: 0 80px; /* edge spacing like screenshot */
+  padding: 0 var(--container-padding);
+  max-width: 100%;
 }
 
 .intro-grid {
@@ -5731,6 +5737,24 @@ main.touch .case-intro-image .btn-wrap {
   margin-top: 12px;
   font-weight: 400;
   color: #9a9a9a;
+}
+
+@media screen and (max-width: 720px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .intro-content h1 {
+    font-size: clamp(26px, 5vw, 32px);
+    line-height: 1.25;
+  }
+
+  .btn-minimal,
+  .btn-minimal-sec {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
 }
 
 /* CTA button */
