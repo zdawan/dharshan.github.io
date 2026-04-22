@@ -1063,11 +1063,11 @@ video.overlay {
 .btn-fill {
   background: linear-gradient(
     135deg,
-    #8c5a5f 0%,
-    #b76e79 25%,
-    #e6b7a6 45%,
-    #b76e79 65%,
-    #8c5a5f 100%
+   #0f172a 0%,     /* deep navy */
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
   );
   position: absolute;
   width: 150%;
@@ -1278,28 +1278,28 @@ video.overlay {
 .btn-round .btn-fill {
   background: linear-gradient(
     135deg,
-    #8c5a5f 0%,
-    #b76e79 25%,
-    #e6b7a6 45%,
-    #b76e79 65%,
-    #8c5a5f 100%
+    #0f172a 0%,     /* deep navy */
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
   );
 }
 
 /* --- Button Circle - Theme Dark --- */
 
 .theme-dark .btn-round .btn-click {
-  background: #3c027e;
+  background: #1e3a8a;
 }
 
 .theme-dark .btn-round .btn-fill {
   background: linear-gradient(
     135deg,
-    #8c5a5f 0%,
-    #b76e79 25%,
-    #e6b7a6 45%,
-    #b76e79 65%,
-    #8c5a5f 100%
+    #0f172a 0%,     /* deep navy */
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
   );
 }
 
