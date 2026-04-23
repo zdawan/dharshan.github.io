@@ -295,6 +295,11 @@ li.interaction {
   color: #fff;
 }
 
+.new-project0 .badge {
+  background: #f59e0b;  /* gold yellow */
+  color: #fff;
+}
+
 .new-project1 .badge {
   background: #3a0be4; /* gold yellow */
   color: #fff;
