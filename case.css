@@ -3827,7 +3827,14 @@ main.touch .main-wrap {
   height: 0;
   border-radius: 50%;
   border: 0;
-  background: var(--color-blue);
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,     /* deep navy */
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
+  );
   position: fixed;
   z-index: 26;
   pointer-events: none;
@@ -4012,7 +4019,14 @@ main.touch .main-wrap {
   transform: translate(-50%, -50%);
   position: absolute;
   overflow: hidden;
-  background: var(--color-blue);
+  background: linear-gradient(
+    135deg,
+    #0f172a 0%,     /* deep navy */
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
+  );
 }
 
 .digital-ball .overlay {
