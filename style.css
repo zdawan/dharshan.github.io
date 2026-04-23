@@ -295,6 +295,17 @@ li.interaction {
   color: #fff;
 }
 
+.new-projectnew .badge {
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 25%,    /* rich blue */
+    #2563eb 50%,    /* electric blue */
+    #38bdf8 75%,    /* cyan glow */
+    #f59e0b 100%    /* subtle amber highlight (matches streak) */
+  );
+  color: #fff;
+}
+
 .new-project0 .badge {
   background: #f59e0b;  /* gold yellow */
   color: #fff;
