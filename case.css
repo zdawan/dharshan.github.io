@@ -291,7 +291,13 @@ li.interaction {
 }
 
 .new-project .badge {
-  background: #fa1876; /* gold yellow */
+  background: linear-gradient(
+  135deg,
+  #312e81 20%,
+  #5b21b6 50%,
+  #7c3aed 75%,
+  #22d3ee 100%
+  );
   color: #fff;
 }
 
