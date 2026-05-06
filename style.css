@@ -3740,12 +3740,6 @@ main.touch .main-wrap {
   .work-tiles-home + .center-grid-btn {
     padding-top: 0;
   }
-  .work-tiles-home .container ul li:nth-child(3) {
-    display: none;
-  }
-  .work-tiles-home .container ul li:nth-child(4) {
-    display: none;
-  }
 }
 
 /* Project Image Card Styles */
