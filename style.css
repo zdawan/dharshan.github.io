@@ -1132,6 +1132,14 @@ video.overlay {
   text-decoration: none;
 }
 
+.btn-click:hover .btn-text-inner {
+  color: #fff !important;
+}
+
+.btn-click:active .btn-text-inner {
+  color: #fff !important;
+}
+
 /* --- Button Normal --- */
 
 .btn-normal.active .btn-click .btn-text-inner {
