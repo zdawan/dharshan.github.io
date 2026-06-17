@@ -848,20 +848,26 @@
                                     const timeSpan = document.querySelector("#timeSpan");
 
                                     function updateTime() {
-                                        // Convert UTC to IST manually (UTC + 5:30)
-                                        const now = new Date();
-                                        const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
-                                        const istTime = new Date(utc + (3600000 * 5.5));
+                                        // Get current time in IST (Asia/Kolkata timezone)
+                                        const formatter = new Intl.DateTimeFormat('en-US', {
+                                            timeZone: 'Asia/Kolkata',
+                                            hour: '2-digit',
+                                            minute: '2-digit',
+                                            second: '2-digit',
+                                            hour12: true
+                                        });
 
-                                        // Format IST
-                                        const hours = istTime.getHours().toString().padStart(2, "0");
-                                        const minutes = istTime.getMinutes().toString().padStart(2, "0");
-                                        const seconds = istTime.getSeconds().toString().padStart(2, "0");
-                                        const ampm = hours >= 12 ? "PM" : "AM";
-
-                                        const displayHours = (hours % 12) || 12; // 12-hour format
-
-                                        timeSpan.textContent = `${displayHours}:${minutes}:${seconds} ${ampm} IST`;
+                                        const parts = formatter.formatToParts(new Date());
+                                        let hour = '', minute = '', second = '', period = '';
+                                        
+                                        parts.forEach(part => {
+                                            if (part.type === 'hour') hour = part.value;
+                                            if (part.type === 'minute') minute = part.value;
+                                            if (part.type === 'second') second = part.value;
+                                            if (part.type === 'dayPeriod') period = part.value;
+                                        });
+                                        
+                                        timeSpan.textContent = `${hour}:${minute}:${second} ${period} IST`;
                                     }
 
                                     updateTime();
