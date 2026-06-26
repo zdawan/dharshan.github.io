@@ -741,13 +741,13 @@ body {
 /* Selection */
 
 ::selection {
-  background-color: var(--color-blue);
+  background-color: #10b981;
   color: var(--color-white);
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background-color: var(--color-blue);
+  background-color: #10b981;
   color: var(--color-white);
   text-shadow: none;
 }
